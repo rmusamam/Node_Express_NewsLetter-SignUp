@@ -36,13 +36,13 @@ app.post('/',function(req,res){
     const jsonData= JSON.stringify(data)
 
 
-res.send("ok")
+res.send(data)
 });
 
 
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("Port 3000 is Active Now")
 });
 
